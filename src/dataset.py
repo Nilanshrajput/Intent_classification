@@ -144,8 +144,8 @@ class TransformerDataModule(pl.LightningDataModule):
         :return: Returns the constructed dataloader
         """
         ds = IntentDataset(
-            queries=df.description.to_numpy(),
-            targets=df.label.to_numpy(),
+            queries=df.text.to_numpy(),
+            targets=df.intent.to_numpy(),
             tokenizer=tokenizer,
             max_length=max_len,
         )
