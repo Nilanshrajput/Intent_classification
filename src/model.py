@@ -169,6 +169,7 @@ if __name__ == "__main__":
     parser = BertIntentClassifier.add_model_specific_args(parent_parser=parser)
 
     parser = TransformerDataModule.add_model_specific_args(parent_parser=parser)
+    mlflow.set_experiment("Intent-Classification")
 
     mlflow.pytorch.autolog()
 
