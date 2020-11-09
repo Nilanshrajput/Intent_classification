@@ -25,7 +25,7 @@ from config import Config
 from dataset import TransformerDataModule
 
 # Set seed
-pl.trainer.seed.seed_everything(seed=Config.seed)
+pl.seed_everything(seed=Config.seed)
 
 # Transforemr Model
 class BertIntentClassifier(pl.LightningModule):

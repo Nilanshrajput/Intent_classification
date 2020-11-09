@@ -12,7 +12,7 @@ import pytorch_lightning as pl
 from config import Config
 
 # Set seed
-pl.trainer.seed.seed_everything(seed=Config.seed)
+pl.seed_everything(seed=Config.seed)
 
 class IntentDataset(Dataset):
     def __init__(self, queries, targets, tokenizer, max_length):
