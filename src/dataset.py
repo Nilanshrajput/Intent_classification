@@ -104,7 +104,7 @@ class TransformerDataModule(pl.LightningDataModule):
 
         self.classes = list(set(train.intent.unique().tolist()+valid.intent.unique().tolist()+test.intent.unique().tolist()))
 
-        train,valid,test = [df.intent.apply(self.to_label) for df in dfs]
+        train.intent,valid.intent,test.intent = [df.intent.apply(self.to_label) for df in dfs]
 
         self.df_train = train
         self.df_test = test
