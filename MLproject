@@ -13,7 +13,7 @@ entry_points:
 
     command: |
           python src/model.py \
-            --max_epochs {max_epochs} \
+            --max-epochs {max_epochs} \
             --gpus {gpus} \
             --batch-size {batch_size} \
             --num-workers {num_workers} \
