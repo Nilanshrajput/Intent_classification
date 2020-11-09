@@ -109,6 +109,7 @@ class TransformerDataModule(pl.LightningDataModule):
         self.df_train = train
         self.df_test = test
         self.df_val = valid
+        self.tokenizer = BertTokenizer.from_pretrained(self.PRE_TRAINED_MODEL_NAME)
 
     @staticmethod
     def add_model_specific_args(parent_parser):
