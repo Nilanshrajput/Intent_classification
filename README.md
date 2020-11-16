@@ -1,6 +1,6 @@
 # Intent_classification
 
-# The project uses **Mlflow** for experiment tracking, and **Pytorch Lightning** and **hugging-face Transformers** Library
+###### The project uses **Mlflow** for experiment tracking, and **Pytorch Lightning** and **hugging-face Transformers** Library
 To start mlfow please check the documentaion here https://mlflow.org/docs for installation.
 ### Running the code
 To run the example via MLflow, navigate to the `Intent_classification/src` directory and run the command
