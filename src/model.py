@@ -171,7 +171,7 @@ if __name__ == "__main__":
     parser = TransformerDataModule.add_model_specific_args(parent_parser=parser)
     
     mlflow.set_tracking_uri('http://52.18.26.216:5000')
-    mlflow.set_experiment("Intent-Classification")
+    mlflow.set_experiment("Intent-Classification2")
 
     mlflow.pytorch.autolog()
 
